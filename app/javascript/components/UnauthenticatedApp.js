@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 class UnauthenticatedApp extends React.Component {
   render () {
     return (
-      <h1>Unauthenticated</h1>
+      <div>Unauthenticated</div>
     );
   }
 }

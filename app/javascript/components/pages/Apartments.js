@@ -31,7 +31,7 @@ class Apartments extends React.Component {
             <th>Country</th>
           </tr>
 
-          {this.state.apartment.map((apartment, index) => {
+          {this.state.apartments.map((apartment, index) => {
             return(
           <tr key={index}>
             <td>{apartment.address}</td>

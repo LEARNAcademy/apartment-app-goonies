@@ -955,3 +955,2743 @@ Processing by PagesController#protected as HTML
 Completed 200 OK in 56ms (Views: 47.8ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-02-08 11:18:49 -0800
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#unprotected as HTML
+  Rendering pages/unprotected.html.erb within layouts/application
+  Rendered pages/unprotected.html.erb within layouts/application (3.4ms)
+Started GET "/" for 127.0.0.1 at 2019-02-08 11:18:52 -0800
+Processing by PagesController#unprotected as HTML
+  Rendering pages/unprotected.html.erb within layouts/application
+  Rendered pages/unprotected.html.erb within layouts/application (0.8ms)
+[Webpacker] Compiling…
+Completed 200 OK in 4457ms (Views: 4453.2ms | ActiveRecord: 0.0ms)
+
+
+[Webpacker] Compilation failed:
+
+Hash: e9bdcd7bf4eba534172c
+Version: webpack 3.12.0
+Time: 1646ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-dbe76564f0bdbb192658.js    1.02 MB       0  [emitted]  [big]  server_rendering
+         application-7e2405f0e038f48afd2a.js    1.02 MB       1  [emitted]  [big]  application
+         hello_react-15b0f500ce5daca02cd0.js    2.98 kB       2  [emitted]         hello_react
+server_rendering-dbe76564f0bdbb192658.js.map    1.19 MB       0  [emitted]         server_rendering
+     application-7e2405f0e038f48afd2a.js.map    1.19 MB       1  [emitted]         application
+     hello_react-15b0f500ce5daca02cd0.js.map     2.5 kB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+   [8] ./app/javascript/components ^\.\/.*$ 364 bytes {0} {1} [built]
+  [16] (webpack)/buildin/global.js 509 bytes {0} {1} [built]
+  [29] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [30] ./app/javascript/packs/hello_react.jsx 226 bytes {2} [built] [failed] [1 error]
+  [31] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 27 hidden modules
+
+WARNING in ./app/javascript/components/pages/NewApartment.js
+Module build failed: SyntaxError: Unexpected token (21:15)
+
+  19 | 
+  20 | 
+> 21 |   handleSubmit = (event)=>{
+     |                ^
+  22 |     event.preventDefault()
+  23 |     console.log("I submitted this")
+  24 |     fetch('/apartments.json', {
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/server_rendering.js
+
+WARNING in ./app/javascript/components/pages/Apartments.js
+Module build failed: SyntaxError: Unexpected token (22:6)
+
+  20 |   render () {
+  21 |     return (
+> 22 |       <div>
+     |       ^
+  23 |       <h1>My Apartments</h1>
+  24 |       <table>
+  25 |         <tbody>
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/server_rendering.js
+
+WARNING in ./app/javascript/components/UnauthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (6:6)
+
+  4 |   render () {
+  5 |     return (
+> 6 |       <h1>Unauthenticated</h1>
+    |       ^
+  7 |     );
+  8 |   }
+  9 | }
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/server_rendering.js
+
+WARNING in ./app/javascript/components/AuthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (9:4)
+
+   7 |   render () {
+   8 |     return (
+>  9 |     <Router>
+     |     ^
+  10 |         <div>
+  11 |         <Switch>
+  12 |           <Route path="/apartments" component={Apartments} />
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/server_rendering.js
+
+ERROR in ./app/javascript/packs/hello_react.jsx
+Module build failed: SyntaxError: Unexpected token (10:2)
+
+   8 | 
+   9 | const Hello = props => (
+> 10 |   <div>Hello {props.name}!</div>
+     |   ^
+  11 | )
+  12 | 
+  13 | Hello.defaultProps = {
+
+
+Completed 200 OK in 10946ms (Views: 10934.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2019-02-08 11:20:48 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user"}
+Completed 401 Unauthorized in 22ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-02-08 11:20:48 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/shared/_links.html.erb (2.0ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/sessions/new.html.erb within layouts/application (52.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: e9bdcd7bf4eba534172c
+Version: webpack 3.12.0
+Time: 1377ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-dbe76564f0bdbb192658.js    1.02 MB       0  [emitted]  [big]  server_rendering
+         application-7e2405f0e038f48afd2a.js    1.02 MB       1  [emitted]  [big]  application
+         hello_react-15b0f500ce5daca02cd0.js    2.98 kB       2  [emitted]         hello_react
+server_rendering-dbe76564f0bdbb192658.js.map    1.19 MB       0  [emitted]         server_rendering
+     application-7e2405f0e038f48afd2a.js.map    1.19 MB       1  [emitted]         application
+     hello_react-15b0f500ce5daca02cd0.js.map     2.5 kB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+   [8] ./app/javascript/components ^\.\/.*$ 364 bytes {0} {1} [built]
+  [16] (webpack)/buildin/global.js 509 bytes {0} {1} [built]
+  [29] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [30] ./app/javascript/packs/hello_react.jsx 226 bytes {2} [built] [failed] [1 error]
+  [31] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 27 hidden modules
+
+WARNING in ./app/javascript/components/pages/NewApartment.js
+Module build failed: SyntaxError: Unexpected token (21:15)
+
+  19 | 
+  20 | 
+> 21 |   handleSubmit = (event)=>{
+     |                ^
+  22 |     event.preventDefault()
+  23 |     console.log("I submitted this")
+  24 |     fetch('/apartments.json', {
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/pages/Apartments.js
+Module build failed: SyntaxError: Unexpected token (22:6)
+
+  20 |   render () {
+  21 |     return (
+> 22 |       <div>
+     |       ^
+  23 |       <h1>My Apartments</h1>
+  24 |       <table>
+  25 |         <tbody>
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/UnauthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (6:6)
+
+  4 |   render () {
+  5 |     return (
+> 6 |       <h1>Unauthenticated</h1>
+    |       ^
+  7 |     );
+  8 |   }
+  9 | }
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/AuthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (9:4)
+
+   7 |   render () {
+   8 |     return (
+>  9 |     <Router>
+     |     ^
+  10 |         <div>
+  11 |         <Switch>
+  12 |           <Route path="/apartments" component={Apartments} />
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/packs/hello_react.jsx
+Module build failed: SyntaxError: Unexpected token (10:2)
+
+   8 | 
+   9 | const Hello = props => (
+> 10 |   <div>Hello {props.name}!</div>
+     |   ^
+  11 | )
+  12 | 
+  13 | Hello.defaultProps = {
+
+
+Completed 200 OK in 3034ms (Views: 3015.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-02-08 11:21:06 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/shared/_error_messages.html.erb (0.6ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/shared/_links.html.erb (1.1ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/registrations/new.html.erb within layouts/application (13.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: e9bdcd7bf4eba534172c
+Version: webpack 3.12.0
+Time: 1270ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-dbe76564f0bdbb192658.js    1.02 MB       0  [emitted]  [big]  server_rendering
+         application-7e2405f0e038f48afd2a.js    1.02 MB       1  [emitted]  [big]  application
+         hello_react-15b0f500ce5daca02cd0.js    2.98 kB       2  [emitted]         hello_react
+server_rendering-dbe76564f0bdbb192658.js.map    1.19 MB       0  [emitted]         server_rendering
+     application-7e2405f0e038f48afd2a.js.map    1.19 MB       1  [emitted]         application
+     hello_react-15b0f500ce5daca02cd0.js.map     2.5 kB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+   [8] ./app/javascript/components ^\.\/.*$ 364 bytes {0} {1} [built]
+  [16] (webpack)/buildin/global.js 509 bytes {0} {1} [built]
+  [29] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [30] ./app/javascript/packs/hello_react.jsx 226 bytes {2} [built] [failed] [1 error]
+  [31] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 27 hidden modules
+
+WARNING in ./app/javascript/components/pages/NewApartment.js
+Module build failed: SyntaxError: Unexpected token (21:15)
+
+  19 | 
+  20 | 
+> 21 |   handleSubmit = (event)=>{
+     |                ^
+  22 |     event.preventDefault()
+  23 |     console.log("I submitted this")
+  24 |     fetch('/apartments.json', {
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/pages/Apartments.js
+Module build failed: SyntaxError: Unexpected token (22:6)
+
+  20 |   render () {
+  21 |     return (
+> 22 |       <div>
+     |       ^
+  23 |       <h1>My Apartments</h1>
+  24 |       <table>
+  25 |         <tbody>
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/UnauthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (6:6)
+
+  4 |   render () {
+  5 |     return (
+> 6 |       <h1>Unauthenticated</h1>
+    |       ^
+  7 |     );
+  8 |   }
+  9 | }
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/AuthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (9:4)
+
+   7 |   render () {
+   8 |     return (
+>  9 |     <Router>
+     |     ^
+  10 |         <div>
+  11 |         <Switch>
+  12 |           <Route path="/apartments" component={Apartments} />
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/packs/hello_react.jsx
+Module build failed: SyntaxError: Unexpected token (10:2)
+
+   8 | 
+   9 | const Hello = props => (
+> 10 |   <div>Hello {props.name}!</div>
+     |   ^
+  11 | )
+  12 | 
+  13 | Hello.defaultProps = {
+
+
+Completed 200 OK in 2740ms (Views: 2736.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-02-08 11:21:22 -0800
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QNGB+kXPNGj3bndMmahJn7nM78dpXOMNbTbxDQ7dXCZOur8hfr2C/CtZgLGv44apSq0i055gN3/Nd9tFyA9aWg==", "user"=>{"email"=>"lagos.d@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "lagos.d@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "lagos.d@gmail.com"], ["encrypted_password", "$2a$11$hdwhrR5h3Yl4n5OWo2cNs.horV0IxnJ7o4ltEAVu67EInEr.5UuGu"], ["created_at", "2019-02-08 19:21:22.583503"], ["updated_at", "2019-02-08 19:21:22.583503"]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/user
+Completed 302 Found in 227ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2019-02-08 11:21:22 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: e9bdcd7bf4eba534172c
+Version: webpack 3.12.0
+Time: 1676ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-dbe76564f0bdbb192658.js    1.02 MB       0  [emitted]  [big]  server_rendering
+         application-7e2405f0e038f48afd2a.js    1.02 MB       1  [emitted]  [big]  application
+         hello_react-15b0f500ce5daca02cd0.js    2.98 kB       2  [emitted]         hello_react
+server_rendering-dbe76564f0bdbb192658.js.map    1.19 MB       0  [emitted]         server_rendering
+     application-7e2405f0e038f48afd2a.js.map    1.19 MB       1  [emitted]         application
+     hello_react-15b0f500ce5daca02cd0.js.map     2.5 kB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+   [8] ./app/javascript/components ^\.\/.*$ 364 bytes {0} {1} [built]
+  [16] (webpack)/buildin/global.js 509 bytes {0} {1} [built]
+  [29] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [30] ./app/javascript/packs/hello_react.jsx 226 bytes {2} [built] [failed] [1 error]
+  [31] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 27 hidden modules
+
+WARNING in ./app/javascript/components/pages/NewApartment.js
+Module build failed: SyntaxError: Unexpected token (21:15)
+
+  19 | 
+  20 | 
+> 21 |   handleSubmit = (event)=>{
+     |                ^
+  22 |     event.preventDefault()
+  23 |     console.log("I submitted this")
+  24 |     fetch('/apartments.json', {
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/pages/Apartments.js
+Module build failed: SyntaxError: Unexpected token (22:6)
+
+  20 |   render () {
+  21 |     return (
+> 22 |       <div>
+     |       ^
+  23 |       <h1>My Apartments</h1>
+  24 |       <table>
+  25 |         <tbody>
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/UnauthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (6:6)
+
+  4 |   render () {
+  5 |     return (
+> 6 |       <h1>Unauthenticated</h1>
+    |       ^
+  7 |     );
+  8 |   }
+  9 | }
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/AuthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (9:4)
+
+   7 |   render () {
+   8 |     return (
+>  9 |     <Router>
+     |     ^
+  10 |         <div>
+  11 |         <Switch>
+  12 |           <Route path="/apartments" component={Apartments} />
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/packs/hello_react.jsx
+Module build failed: SyntaxError: Unexpected token (10:2)
+
+   8 | 
+   9 | const Hello = props => (
+> 10 |   <div>Hello {props.name}!</div>
+     |   ^
+  11 | )
+  12 | 
+  13 | Hello.defaultProps = {
+
+
+Completed 200 OK in 3360ms (Views: 3341.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2019-02-08 11:21:33 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: e9bdcd7bf4eba534172c
+Version: webpack 3.12.0
+Time: 1278ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-dbe76564f0bdbb192658.js    1.02 MB       0  [emitted]  [big]  server_rendering
+         application-7e2405f0e038f48afd2a.js    1.02 MB       1  [emitted]  [big]  application
+         hello_react-15b0f500ce5daca02cd0.js    2.98 kB       2  [emitted]         hello_react
+server_rendering-dbe76564f0bdbb192658.js.map    1.19 MB       0  [emitted]         server_rendering
+     application-7e2405f0e038f48afd2a.js.map    1.19 MB       1  [emitted]         application
+     hello_react-15b0f500ce5daca02cd0.js.map     2.5 kB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+   [8] ./app/javascript/components ^\.\/.*$ 364 bytes {0} {1} [built]
+  [16] (webpack)/buildin/global.js 509 bytes {0} {1} [built]
+  [29] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [30] ./app/javascript/packs/hello_react.jsx 226 bytes {2} [built] [failed] [1 error]
+  [31] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 27 hidden modules
+
+WARNING in ./app/javascript/components/pages/NewApartment.js
+Module build failed: SyntaxError: Unexpected token (21:15)
+
+  19 | 
+  20 | 
+> 21 |   handleSubmit = (event)=>{
+     |                ^
+  22 |     event.preventDefault()
+  23 |     console.log("I submitted this")
+  24 |     fetch('/apartments.json', {
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/pages/Apartments.js
+Module build failed: SyntaxError: Unexpected token (22:6)
+
+  20 |   render () {
+  21 |     return (
+> 22 |       <div>
+     |       ^
+  23 |       <h1>My Apartments</h1>
+  24 |       <table>
+  25 |         <tbody>
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/UnauthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (6:6)
+
+  4 |   render () {
+  5 |     return (
+> 6 |       <h1>Unauthenticated</h1>
+    |       ^
+  7 |     );
+  8 |   }
+  9 | }
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/AuthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (9:4)
+
+   7 |   render () {
+   8 |     return (
+>  9 |     <Router>
+     |     ^
+  10 |         <div>
+  11 |         <Switch>
+  12 |           <Route path="/apartments" component={Apartments} />
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/packs/hello_react.jsx
+Module build failed: SyntaxError: Unexpected token (10:2)
+
+   8 | 
+   9 | const Hello = props => (
+> 10 |   <div>Hello {props.name}!</div>
+     |   ^
+  11 | )
+  12 | 
+  13 | Hello.defaultProps = {
+
+
+Completed 200 OK in 2966ms (Views: 2961.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2019-02-08 11:25:52 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 8b16cc73e5e2480b8c07
+Version: webpack 3.12.0
+Time: 1473ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-4b544b165d7b1573f651.js    1.02 MB       0  [emitted]  [big]  server_rendering
+         application-b24e688f5e193b9b19c8.js    1.02 MB       1  [emitted]  [big]  application
+         hello_react-15b0f500ce5daca02cd0.js    2.98 kB       2  [emitted]         hello_react
+server_rendering-4b544b165d7b1573f651.js.map    1.19 MB       0  [emitted]         server_rendering
+     application-b24e688f5e193b9b19c8.js.map    1.19 MB       1  [emitted]         application
+     hello_react-15b0f500ce5daca02cd0.js.map     2.5 kB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+   [8] ./app/javascript/components ^\.\/.*$ 364 bytes {0} {1} [built]
+  [16] (webpack)/buildin/global.js 509 bytes {0} {1} [built]
+  [29] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [30] ./app/javascript/packs/hello_react.jsx 226 bytes {2} [built] [failed] [1 error]
+  [31] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 27 hidden modules
+
+WARNING in ./app/javascript/components/pages/NewApartment.js
+Module build failed: SyntaxError: Unexpected token (21:15)
+
+  19 | 
+  20 | 
+> 21 |   handleSubmit = (event)=>{
+     |                ^
+  22 |     event.preventDefault()
+  23 |     console.log("I submitted this")
+  24 |     fetch('/apartments.json', {
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/pages/Apartments.js
+Module build failed: SyntaxError: Unexpected token (22:6)
+
+  20 |   render () {
+  21 |     return (
+> 22 |       <div>
+     |       ^
+  23 |       <h1>My Apartments</h1>
+  24 |       <table>
+  25 |         <tbody>
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/UnauthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (6:6)
+
+  4 |   render () {
+  5 |     return (
+> 6 |       <h1>Unauthenticated</h1>
+    |       ^
+  7 |     );
+  8 |   }
+  9 | }
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/AuthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (9:4)
+
+   7 |   render () {
+   8 |     return (
+>  9 |     <div>
+     |     ^
+  10 |       <Router>
+  11 |           <Switch>
+  12 |             <Route path="/apartments" component={Apartments} />
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/packs/hello_react.jsx
+Module build failed: SyntaxError: Unexpected token (10:2)
+
+   8 | 
+   9 | const Hello = props => (
+> 10 |   <div>Hello {props.name}!</div>
+     |   ^
+  11 | )
+  12 | 
+  13 | Hello.defaultProps = {
+
+
+Completed 200 OK in 3123ms (Views: 3068.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2019-02-08 11:26:42 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.2ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 38ac12439e5a501efcf3
+Version: webpack 3.12.0
+Time: 1353ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-dab0a89f0f2980a1313f.js    1.02 MB       0  [emitted]  [big]  server_rendering
+         application-b8f9a063a917b487fb46.js    1.02 MB       1  [emitted]  [big]  application
+         hello_react-15b0f500ce5daca02cd0.js    2.98 kB       2  [emitted]         hello_react
+server_rendering-dab0a89f0f2980a1313f.js.map    1.19 MB       0  [emitted]         server_rendering
+     application-b8f9a063a917b487fb46.js.map    1.19 MB       1  [emitted]         application
+     hello_react-15b0f500ce5daca02cd0.js.map     2.5 kB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+   [8] ./app/javascript/components ^\.\/.*$ 364 bytes {0} {1} [built]
+  [16] (webpack)/buildin/global.js 509 bytes {0} {1} [built]
+  [29] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [30] ./app/javascript/packs/hello_react.jsx 226 bytes {2} [built] [failed] [1 error]
+  [31] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 27 hidden modules
+
+WARNING in ./app/javascript/components/pages/NewApartment.js
+Module build failed: SyntaxError: Unexpected token (21:15)
+
+  19 | 
+  20 | 
+> 21 |   handleSubmit = (event)=>{
+     |                ^
+  22 |     event.preventDefault()
+  23 |     console.log("I submitted this")
+  24 |     fetch('/apartments.json', {
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/pages/Apartments.js
+Module build failed: SyntaxError: Unexpected token (22:6)
+
+  20 |   render () {
+  21 |     return (
+> 22 |       <div>
+     |       ^
+  23 |       <h1>My Apartments</h1>
+  24 |       <table>
+  25 |         <tbody>
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/UnauthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (6:6)
+
+  4 |   render () {
+  5 |     return (
+> 6 |       <h1>Unauthenticated</h1>
+    |       ^
+  7 |     );
+  8 |   }
+  9 | }
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/AuthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (9:6)
+
+   7 |   render () {
+   8 |     return (
+>  9 |       <Router>
+     |       ^
+  10 |         <div>
+  11 |           <Switch>
+  12 |             <Route path="./apartments" component={Apartments} />
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/packs/hello_react.jsx
+Module build failed: SyntaxError: Unexpected token (10:2)
+
+   8 | 
+   9 | const Hello = props => (
+> 10 |   <div>Hello {props.name}!</div>
+     |   ^
+  11 | )
+  12 | 
+  13 | Hello.defaultProps = {
+
+
+Completed 200 OK in 3053ms (Views: 3032.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2019-02-08 11:27:30 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.2ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 12ef352c09d1bedb651d
+Version: webpack 3.12.0
+Time: 1200ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-de0bc4dba6d23898eb8b.js    1.02 MB       0  [emitted]  [big]  server_rendering
+         application-b03a70d6546c1561f4ff.js    1.02 MB       1  [emitted]  [big]  application
+         hello_react-15b0f500ce5daca02cd0.js    2.98 kB       2  [emitted]         hello_react
+server_rendering-de0bc4dba6d23898eb8b.js.map    1.19 MB       0  [emitted]         server_rendering
+     application-b03a70d6546c1561f4ff.js.map    1.19 MB       1  [emitted]         application
+     hello_react-15b0f500ce5daca02cd0.js.map     2.5 kB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+   [8] ./app/javascript/components ^\.\/.*$ 364 bytes {0} {1} [built]
+  [16] (webpack)/buildin/global.js 509 bytes {0} {1} [built]
+  [29] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [30] ./app/javascript/packs/hello_react.jsx 226 bytes {2} [built] [failed] [1 error]
+  [31] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 27 hidden modules
+
+WARNING in ./app/javascript/components/pages/NewApartment.js
+Module build failed: SyntaxError: Unexpected token (21:15)
+
+  19 | 
+  20 | 
+> 21 |   handleSubmit = (event)=>{
+     |                ^
+  22 |     event.preventDefault()
+  23 |     console.log("I submitted this")
+  24 |     fetch('/apartments.json', {
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/pages/Apartments.js
+Module build failed: SyntaxError: Unexpected token (22:6)
+
+  20 |   render () {
+  21 |     return (
+> 22 |       <div>
+     |       ^
+  23 |       <h1>My Apartments</h1>
+  24 |       <table>
+  25 |         <tbody>
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/UnauthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (6:6)
+
+  4 |   render () {
+  5 |     return (
+> 6 |       <h1>Unauthenticated</h1>
+    |       ^
+  7 |     );
+  8 |   }
+  9 | }
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/AuthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (9:6)
+
+   7 |   render () {
+   8 |     return (
+>  9 |       <Router> <div>
+     |       ^
+  10 |           <Switch>
+  11 |             <Route path="/apartments" component={Apartments} />
+  12 |           </Switch> </div>
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/packs/hello_react.jsx
+Module build failed: SyntaxError: Unexpected token (10:2)
+
+   8 | 
+   9 | const Hello = props => (
+> 10 |   <div>Hello {props.name}!</div>
+     |   ^
+  11 | )
+  12 | 
+  13 | Hello.defaultProps = {
+
+
+Completed 200 OK in 2725ms (Views: 2702.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2019-02-08 11:27:57 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.4ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: b895427fb07fc0c9eb8c
+Version: webpack 3.12.0
+Time: 1166ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-2d6449faf85c3d90a2f6.js    1.02 MB       0  [emitted]  [big]  server_rendering
+         application-08f95ffb84271de6ade3.js    1.02 MB       1  [emitted]  [big]  application
+         hello_react-15b0f500ce5daca02cd0.js    2.98 kB       2  [emitted]         hello_react
+server_rendering-2d6449faf85c3d90a2f6.js.map    1.19 MB       0  [emitted]         server_rendering
+     application-08f95ffb84271de6ade3.js.map    1.19 MB       1  [emitted]         application
+     hello_react-15b0f500ce5daca02cd0.js.map     2.5 kB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+   [8] ./app/javascript/components ^\.\/.*$ 364 bytes {0} {1} [built]
+  [16] (webpack)/buildin/global.js 509 bytes {0} {1} [built]
+  [29] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [30] ./app/javascript/packs/hello_react.jsx 226 bytes {2} [built] [failed] [1 error]
+  [31] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 27 hidden modules
+
+WARNING in ./app/javascript/components/pages/NewApartment.js
+Module build failed: SyntaxError: Unexpected token (21:15)
+
+  19 | 
+  20 | 
+> 21 |   handleSubmit = (event)=>{
+     |                ^
+  22 |     event.preventDefault()
+  23 |     console.log("I submitted this")
+  24 |     fetch('/apartments.json', {
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/pages/Apartments.js
+Module build failed: SyntaxError: Unexpected token (22:6)
+
+  20 |   render () {
+  21 |     return (
+> 22 |       <div>
+     |       ^
+  23 |       <h1>My Apartments</h1>
+  24 |       <table>
+  25 |         <tbody>
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/UnauthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (6:6)
+
+  4 |   render () {
+  5 |     return (
+> 6 |       <h1>Unauthenticated</h1>
+    |       ^
+  7 |     );
+  8 |   }
+  9 | }
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/AuthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (9:6)
+
+   7 |   render () {
+   8 |     return (
+>  9 |       <Router>
+     |       ^
+  10 |         <div>
+  11 |           <Switch>
+  12 |             <Route path="/apartments" component={Apartments} />
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/packs/hello_react.jsx
+Module build failed: SyntaxError: Unexpected token (10:2)
+
+   8 | 
+   9 | const Hello = props => (
+> 10 |   <div>Hello {props.name}!</div>
+     |   ^
+  11 | )
+  12 | 
+  13 | Hello.defaultProps = {
+
+
+Completed 200 OK in 2694ms (Views: 2664.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/user/newapartments" for 127.0.0.1 at 2019-02-08 11:28:35 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user/newapartments"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.9ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: b895427fb07fc0c9eb8c
+Version: webpack 3.12.0
+Time: 1277ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-2d6449faf85c3d90a2f6.js    1.02 MB       0  [emitted]  [big]  server_rendering
+         application-08f95ffb84271de6ade3.js    1.02 MB       1  [emitted]  [big]  application
+         hello_react-15b0f500ce5daca02cd0.js    2.98 kB       2  [emitted]         hello_react
+server_rendering-2d6449faf85c3d90a2f6.js.map    1.19 MB       0  [emitted]         server_rendering
+     application-08f95ffb84271de6ade3.js.map    1.19 MB       1  [emitted]         application
+     hello_react-15b0f500ce5daca02cd0.js.map     2.5 kB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+   [8] ./app/javascript/components ^\.\/.*$ 364 bytes {0} {1} [built]
+  [16] (webpack)/buildin/global.js 509 bytes {0} {1} [built]
+  [29] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [30] ./app/javascript/packs/hello_react.jsx 226 bytes {2} [built] [failed] [1 error]
+  [31] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 27 hidden modules
+
+WARNING in ./app/javascript/components/pages/NewApartment.js
+Module build failed: SyntaxError: Unexpected token (21:15)
+
+  19 | 
+  20 | 
+> 21 |   handleSubmit = (event)=>{
+     |                ^
+  22 |     event.preventDefault()
+  23 |     console.log("I submitted this")
+  24 |     fetch('/apartments.json', {
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/pages/Apartments.js
+Module build failed: SyntaxError: Unexpected token (22:6)
+
+  20 |   render () {
+  21 |     return (
+> 22 |       <div>
+     |       ^
+  23 |       <h1>My Apartments</h1>
+  24 |       <table>
+  25 |         <tbody>
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/UnauthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (6:6)
+
+  4 |   render () {
+  5 |     return (
+> 6 |       <h1>Unauthenticated</h1>
+    |       ^
+  7 |     );
+  8 |   }
+  9 | }
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/AuthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (9:6)
+
+   7 |   render () {
+   8 |     return (
+>  9 |       <Router>
+     |       ^
+  10 |         <div>
+  11 |           <Switch>
+  12 |             <Route path="/apartments" component={Apartments} />
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/packs/hello_react.jsx
+Module build failed: SyntaxError: Unexpected token (10:2)
+
+   8 | 
+   9 | const Hello = props => (
+> 10 |   <div>Hello {props.name}!</div>
+     |   ^
+  11 | )
+  12 | 
+  13 | Hello.defaultProps = {
+
+
+Completed 200 OK in 2739ms (Views: 2724.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/user/newapartment" for 127.0.0.1 at 2019-02-08 11:28:39 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user/newapartment"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (2.2ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: b895427fb07fc0c9eb8c
+Version: webpack 3.12.0
+Time: 1368ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-2d6449faf85c3d90a2f6.js    1.02 MB       0  [emitted]  [big]  server_rendering
+         application-08f95ffb84271de6ade3.js    1.02 MB       1  [emitted]  [big]  application
+         hello_react-15b0f500ce5daca02cd0.js    2.98 kB       2  [emitted]         hello_react
+server_rendering-2d6449faf85c3d90a2f6.js.map    1.19 MB       0  [emitted]         server_rendering
+     application-08f95ffb84271de6ade3.js.map    1.19 MB       1  [emitted]         application
+     hello_react-15b0f500ce5daca02cd0.js.map     2.5 kB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+   [8] ./app/javascript/components ^\.\/.*$ 364 bytes {0} {1} [built]
+  [16] (webpack)/buildin/global.js 509 bytes {0} {1} [built]
+  [29] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [30] ./app/javascript/packs/hello_react.jsx 226 bytes {2} [built] [failed] [1 error]
+  [31] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 27 hidden modules
+
+WARNING in ./app/javascript/components/pages/NewApartment.js
+Module build failed: SyntaxError: Unexpected token (21:15)
+
+  19 | 
+  20 | 
+> 21 |   handleSubmit = (event)=>{
+     |                ^
+  22 |     event.preventDefault()
+  23 |     console.log("I submitted this")
+  24 |     fetch('/apartments.json', {
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/pages/Apartments.js
+Module build failed: SyntaxError: Unexpected token (22:6)
+
+  20 |   render () {
+  21 |     return (
+> 22 |       <div>
+     |       ^
+  23 |       <h1>My Apartments</h1>
+  24 |       <table>
+  25 |         <tbody>
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/UnauthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (6:6)
+
+  4 |   render () {
+  5 |     return (
+> 6 |       <h1>Unauthenticated</h1>
+    |       ^
+  7 |     );
+  8 |   }
+  9 | }
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/AuthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (9:6)
+
+   7 |   render () {
+   8 |     return (
+>  9 |       <Router>
+     |       ^
+  10 |         <div>
+  11 |           <Switch>
+  12 |             <Route path="/apartments" component={Apartments} />
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/packs/hello_react.jsx
+Module build failed: SyntaxError: Unexpected token (10:2)
+
+   8 | 
+   9 | const Hello = props => (
+> 10 |   <div>Hello {props.name}!</div>
+     |   ^
+  11 | )
+  12 | 
+  13 | Hello.defaultProps = {
+
+
+Completed 200 OK in 3192ms (Views: 3180.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/user/new-apartment" for 127.0.0.1 at 2019-02-08 11:28:52 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user/new-apartment"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: b895427fb07fc0c9eb8c
+Version: webpack 3.12.0
+Time: 1287ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-2d6449faf85c3d90a2f6.js    1.02 MB       0  [emitted]  [big]  server_rendering
+         application-08f95ffb84271de6ade3.js    1.02 MB       1  [emitted]  [big]  application
+         hello_react-15b0f500ce5daca02cd0.js    2.98 kB       2  [emitted]         hello_react
+server_rendering-2d6449faf85c3d90a2f6.js.map    1.19 MB       0  [emitted]         server_rendering
+     application-08f95ffb84271de6ade3.js.map    1.19 MB       1  [emitted]         application
+     hello_react-15b0f500ce5daca02cd0.js.map     2.5 kB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+   [8] ./app/javascript/components ^\.\/.*$ 364 bytes {0} {1} [built]
+  [16] (webpack)/buildin/global.js 509 bytes {0} {1} [built]
+  [29] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [30] ./app/javascript/packs/hello_react.jsx 226 bytes {2} [built] [failed] [1 error]
+  [31] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 27 hidden modules
+
+WARNING in ./app/javascript/components/pages/NewApartment.js
+Module build failed: SyntaxError: Unexpected token (21:15)
+
+  19 | 
+  20 | 
+> 21 |   handleSubmit = (event)=>{
+     |                ^
+  22 |     event.preventDefault()
+  23 |     console.log("I submitted this")
+  24 |     fetch('/apartments.json', {
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/pages/Apartments.js
+Module build failed: SyntaxError: Unexpected token (22:6)
+
+  20 |   render () {
+  21 |     return (
+> 22 |       <div>
+     |       ^
+  23 |       <h1>My Apartments</h1>
+  24 |       <table>
+  25 |         <tbody>
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/UnauthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (6:6)
+
+  4 |   render () {
+  5 |     return (
+> 6 |       <h1>Unauthenticated</h1>
+    |       ^
+  7 |     );
+  8 |   }
+  9 | }
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/AuthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (9:6)
+
+   7 |   render () {
+   8 |     return (
+>  9 |       <Router>
+     |       ^
+  10 |         <div>
+  11 |           <Switch>
+  12 |             <Route path="/apartments" component={Apartments} />
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/packs/hello_react.jsx
+Module build failed: SyntaxError: Unexpected token (10:2)
+
+   8 | 
+   9 | const Hello = props => (
+> 10 |   <div>Hello {props.name}!</div>
+     |   ^
+  11 | )
+  12 | 
+  13 | Hello.defaultProps = {
+
+
+Completed 200 OK in 2859ms (Views: 2850.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/user/new-apartment" for 127.0.0.1 at 2019-02-08 11:32:50 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user/new-apartment"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: b895427fb07fc0c9eb8c
+Version: webpack 3.12.0
+Time: 1277ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-2d6449faf85c3d90a2f6.js    1.02 MB       0  [emitted]  [big]  server_rendering
+         application-08f95ffb84271de6ade3.js    1.02 MB       1  [emitted]  [big]  application
+         hello_react-15b0f500ce5daca02cd0.js    2.98 kB       2  [emitted]         hello_react
+server_rendering-2d6449faf85c3d90a2f6.js.map    1.19 MB       0  [emitted]         server_rendering
+     application-08f95ffb84271de6ade3.js.map    1.19 MB       1  [emitted]         application
+     hello_react-15b0f500ce5daca02cd0.js.map     2.5 kB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+   [8] ./app/javascript/components ^\.\/.*$ 364 bytes {0} {1} [built]
+  [16] (webpack)/buildin/global.js 509 bytes {0} {1} [built]
+  [29] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [30] ./app/javascript/packs/hello_react.jsx 226 bytes {2} [built] [failed] [1 error]
+  [31] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 27 hidden modules
+
+WARNING in ./app/javascript/components/pages/NewApartment.js
+Module build failed: SyntaxError: Unexpected token (21:15)
+
+  19 | 
+  20 | 
+> 21 |   handleSubmit = (event)=>{
+     |                ^
+  22 |     event.preventDefault()
+  23 |     console.log("I submitted this")
+  24 |     fetch('/apartments.json', {
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/pages/Apartments.js
+Module build failed: SyntaxError: Unexpected token (22:6)
+
+  20 |   render () {
+  21 |     return (
+> 22 |       <div>
+     |       ^
+  23 |       <h1>My Apartments</h1>
+  24 |       <table>
+  25 |         <tbody>
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/UnauthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (6:6)
+
+  4 |   render () {
+  5 |     return (
+> 6 |       <h1>Unauthenticated</h1>
+    |       ^
+  7 |     );
+  8 |   }
+  9 | }
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/AuthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (9:6)
+
+   7 |   render () {
+   8 |     return (
+>  9 |       <Router>
+     |       ^
+  10 |         <div>
+  11 |           <Switch>
+  12 |             <Route path="/apartments" component={Apartments} />
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/packs/hello_react.jsx
+Module build failed: SyntaxError: Unexpected token (10:2)
+
+   8 | 
+   9 | const Hello = props => (
+> 10 |   <div>Hello {props.name}!</div>
+     |   ^
+  11 | )
+  12 | 
+  13 | Hello.defaultProps = {
+
+
+Completed 200 OK in 2757ms (Views: 2734.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/user/new-apartment" for 127.0.0.1 at 2019-02-08 11:38:41 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user/new-apartment"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: bedf88ccf4a4420e2e8a
+Version: webpack 3.12.0
+Time: 1324ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-d8e6a914392c4293e62e.js    1.02 MB       0  [emitted]  [big]  server_rendering
+         application-ec4bd3554751b504e42c.js    1.02 MB       1  [emitted]  [big]  application
+         hello_react-15b0f500ce5daca02cd0.js    2.98 kB       2  [emitted]         hello_react
+server_rendering-d8e6a914392c4293e62e.js.map    1.19 MB       0  [emitted]         server_rendering
+     application-ec4bd3554751b504e42c.js.map    1.19 MB       1  [emitted]         application
+     hello_react-15b0f500ce5daca02cd0.js.map     2.5 kB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+   [8] ./app/javascript/components ^\.\/.*$ 364 bytes {0} {1} [built]
+  [16] (webpack)/buildin/global.js 509 bytes {0} {1} [built]
+  [29] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [30] ./app/javascript/packs/hello_react.jsx 226 bytes {2} [built] [failed] [1 error]
+  [31] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 27 hidden modules
+
+WARNING in ./app/javascript/components/pages/NewApartment.js
+Module build failed: SyntaxError: Unexpected token (21:15)
+
+  19 | 
+  20 | 
+> 21 |   handleSubmit = (event)=>{
+     |                ^
+  22 |     event.preventDefault()
+  23 |     console.log("I submitted this")
+  24 |     fetch('/apartments.json', {
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/pages/Apartments.js
+Module build failed: SyntaxError: Unexpected token (22:6)
+
+  20 |   render () {
+  21 |     return (
+> 22 |       <div>
+     |       ^
+  23 |       <h1>My Apartments</h1>
+  24 |       <table>
+  25 |         <tbody>
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/UnauthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (6:6)
+
+  4 |   render () {
+  5 |     return (
+> 6 |       <div>Unauthenticated</div>
+    |       ^
+  7 |     );
+  8 |   }
+  9 | }
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+WARNING in ./app/javascript/components/AuthenticatedApp.js
+Module build failed: SyntaxError: Unexpected token (9:6)
+
+   7 |   render () {
+   8 |     return (
+>  9 |       <Router>
+     |       ^
+  10 |         <div>
+  11 |           <Switch>
+  12 |             <Route path="/apartments" component={Apartments} />
+
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/packs/hello_react.jsx
+Module build failed: SyntaxError: Unexpected token (10:2)
+
+   8 | 
+   9 | const Hello = props => (
+> 10 |   <div>Hello {props.name}!</div>
+     |   ^
+  11 | )
+  12 | 
+  13 | Hello.defaultProps = {
+
+
+Completed 200 OK in 2953ms (Views: 2928.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/user/new-apartment" for 127.0.0.1 at 2019-02-08 11:48:49 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user/new-apartment"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.0ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/learn/Desktop/apartment-app-goonies/public/packs
+Completed 200 OK in 5916ms (Views: 5895.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/user/napartments" for 127.0.0.1 at 2019-02-08 11:49:04 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user/napartments"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 59ms (Views: 50.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/user/apartments" for 127.0.0.1 at 2019-02-08 11:49:09 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user/apartments"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 59ms (Views: 50.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2019-02-08 11:49:14 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 67ms (Views: 53.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2019-02-08 11:49:27 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-02-08 11:49:27 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/shared/_links.html.erb (1.2ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/sessions/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 54ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-02-08 11:49:39 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/sessions/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 51ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-02-08 11:50:05 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mrWDD9Ul6hDeEeWIDqm8zwYcmhq7a9njyoHiugghn13RIWMaRXOZHrlFFrw+OiRuZSN3o774QB6pxHV55UHl3A==", "user"=>{"email"=>"lagos.d@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "lagos.d@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/user
+Completed 302 Found in 174ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2019-02-08 11:50:06 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 41ms (Views: 31.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/user/new-apartments" for 127.0.0.1 at 2019-02-08 11:57:29 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user/new-apartments"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 59ms (Views: 45.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2019-02-08 12:03:36 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-02-08 12:03:36 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/shared/_links.html.erb (1.1ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/sessions/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 69ms (Views: 67.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2019-02-08 12:05:19 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/registrations/new.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 60ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-02-08 12:05:31 -0800
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2NuUSJKXr5fDceRK8bjh1n+TO8Zs2OBgtN3yN0TeNKczw2a5t37XzYpKziPNmoLLDHqu4tM+XMVgklGzOThncw==", "user"=>{"email"=>"eream86@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "eream86@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/shared/_error_messages.html.erb (1.2ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/registrations/new.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 222ms (Views: 55.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2019-02-08 12:05:40 -0800
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1EeSadsCFr3I1GBOkk6PITvdbkcoduW8oeT9z1kOvrkm0xzOLiE/zz9GQDWgAQRJgX80wSfmy6illCAqZ+mPDA==", "user"=>{"email"=>"eream88@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "eream88@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "eream88@gmail.com"], ["encrypted_password", "$2a$11$aivx7hG9ddpsEKdikdNAV.IQf/2USURhvMw48dCqbU5IWzTKepYRm"], ["created_at", "2019-02-08 20:05:40.817112"], ["updated_at", "2019-02-08 20:05:40.817112"]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/user
+Completed 302 Found in 168ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2019-02-08 12:05:40 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 109ms (Views: 52.9ms | ActiveRecord: 45.2ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateApartments (20190208211648)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ db/migrate/20190208211648_create_apartments.rb:3
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "apartments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "address" varchar, "city" varchar, "zip_code" integer, "state" varchar, "country" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20190208211648_create_apartments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190208211648"]]
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/user" for 127.0.0.1 at 2019-02-08 13:19:17 -0800
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 2350ms (Views: 2301.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2019-02-08 13:19:38 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-02-08 13:19:38 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/shared/_links.html.erb (1.8ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/sessions/new.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 59ms (Views: 57.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-02-08 13:22:14 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aYWHO9Jwfaj079HjnNzws/dUqV9JoWTsSWYWQG5aJmgHdh/4eqEoPxL+JhaHrbUPHQYKc98tREUfFl7dd21v6Q==", "user"=>{"email"=>"eream86@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "eream86@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/user
+Completed 302 Found in 157ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2019-02-08 13:22:15 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 37ms (Views: 30.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2019-02-08 13:23:22 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-02-08 13:23:22 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/shared/_links.html.erb (1.1ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/sessions/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 43ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-02-08 13:23:33 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t7c/9EdoAUJWKt1DbOW2p0qefUAmlpBrDPuvPIEYsVJHubHDYD+QTTyJ875ioio9r0TO4gypQ4Vk0pNLdmp1ig==", "user"=>{"email"=>"eream86@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "eream86@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/user
+Completed 302 Found in 155ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2019-02-08 13:23:33 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 32ms (Views: 28.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/user/new-apartment" for 127.0.0.1 at 2019-02-08 13:23:43 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user/new-apartment"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 60ms (Views: 48.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/user/apartments" for 127.0.0.1 at 2019-02-08 13:23:48 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user/apartments"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 61ms (Views: 52.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2019-02-08 13:25:20 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 41ms (Views: 35.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2019-02-08 13:26:18 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"user"}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-02-08 13:26:18 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/shared/_links.html.erb (1.3ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/sessions/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 47ms (Views: 44.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 13:26:31 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"users/apartments"}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-02-08 13:26:31 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/sessions/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 54ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-02-08 13:26:42 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nxFWSgZ/yPZsDnPsh6MPGcCET42AX/AsQZW2/IS07U5T9lf0s84KhzQ9ns2kiGs28jlG/gbBsjRn/nEK7NCqoQ==", "user"=>{"email"=>"eream86@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "eream86@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/users/apartments
+Completed 302 Found in 158ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 13:26:42 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"users/apartments"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 36ms (Views: 30.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 13:33:56 -0800
+Processing by PagesController#protected as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.8ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/learn/Desktop/apartment-app-goonies/public/packs
+Completed 200 OK in 4962ms (Views: 4947.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 13:34:31 -0800
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#protected as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.9ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/learn/Desktop/apartment-app-goonies/public/packs
+Completed 200 OK in 7245ms (Views: 7197.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 13:34:38 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 13:35:04 -0800
+Processing by PagesController#protected as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.9ms)
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 13:35:04 -0800
+Completed 200 OK in 82ms (Views: 68.7ms | ActiveRecord: 0.5ms)
+
+
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 13:35:05 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 13:36:11 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 13:36:12 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/users/newapartment" for 127.0.0.1 at 2019-02-08 13:36:20 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/users/newapartment"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users/new-apartment" for 127.0.0.1 at 2019-02-08 13:36:31 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/users/new-apartment"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 13:39:03 -0800
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#protected as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (2.1ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/learn/Desktop/apartment-app-goonies/public/packs
+Completed 200 OK in 6854ms (Views: 6803.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 13:39:26 -0800
+Processing by PagesController#protected as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/learn/Desktop/apartment-app-goonies/public/packs
+Completed 200 OK in 4371ms (Views: 4347.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 13:39:31 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 13:39:48 -0800
+Processing by PagesController#protected as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 13:39:48 -0800
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 120ms (Views: 107.6ms | ActiveRecord: 0.5ms)
+
+
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 13:39:49 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 13:40:20 -0800
+Processing by PagesController#protected as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 65ms (Views: 54.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 13:40:21 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/users/new-apartment" for 127.0.0.1 at 2019-02-08 13:40:25 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/users/new-apartment"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users/newapartment" for 127.0.0.1 at 2019-02-08 13:40:42 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/users/newapartment"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users/new-apartment" for 127.0.0.1 at 2019-02-08 13:40:48 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/users/new-apartment"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-02-08 13:40:53 -0800
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 49ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/users/new-apartment" for 127.0.0.1 at 2019-02-08 13:45:15 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/users/new-apartment"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 13:45:24 -0800
+Processing by PagesController#protected as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 92ms (Views: 60.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 13:45:24 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/users/new-apartment" for 127.0.0.1 at 2019-02-08 13:45:28 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/users/new-apartment"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 13:45:34 -0800
+Processing by PagesController#protected as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 66ms (Views: 59.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 13:45:35 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 13:46:36 -0800
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#protected as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 2979ms (Views: 2941.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 13:46:39 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 13:48:13 -0800
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 13:48:13 -0800
+Processing by PagesController#protected as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.8ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/learn/Desktop/apartment-app-goonies/public/packs
+Completed 200 OK in 5319ms (Views: 5294.8ms | ActiveRecord: 1.7ms)
+
+
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 13:48:19 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 13:50:12 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 13:50:12 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 13:50:14 -0800
+Processing by PagesController#protected as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/learn/Desktop/apartment-app-goonies/public/packs
+Completed 200 OK in 4783ms (Views: 4753.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 13:50:32 -0800
+Processing by PagesController#protected as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/learn/Desktop/apartment-app-goonies/public/packs
+Completed 200 OK in 4135ms (Views: 4104.7ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/" for 127.0.0.1 at 2019-02-08 13:50:43 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users" for 127.0.0.1 at 2019-02-08 13:50:49 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users" for 127.0.0.1 at 2019-02-08 13:51:03 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-02-08 13:51:10 -0800
+Processing by PagesController#unprotected as HTML
+  Rendering pages/unprotected.html.erb within layouts/application
+  Rendered pages/unprotected.html.erb within layouts/application (5.1ms)
+[Webpacker] Compiling…
+Started GET "/" for 127.0.0.1 at 2019-02-08 13:51:14 -0800
+Processing by PagesController#unprotected as HTML
+  Rendering pages/unprotected.html.erb within layouts/application
+  Rendered pages/unprotected.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 82ms (Views: 78.9ms | ActiveRecord: 0.0ms)
+
+
+[Webpacker] Compiled all packs in /Users/learn/Desktop/apartment-app-goonies/public/packs
+Completed 200 OK in 4400ms (Views: 4354.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/user" for 127.0.0.1 at 2019-02-08 13:51:18 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/user"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 13:51:19 -0800
+Processing by PagesController#protected as HTML
+Completed 401 Unauthorized in 305ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-02-08 13:51:19 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/shared/_links.html.erb (1.9ms)
+  Rendered /Users/learn/.rvm/gems/ruby-2.5.3/gems/devise-4.6.0/app/views/devise/sessions/new.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 104ms (Views: 82.1ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-02-08 13:51:30 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Dk6ybfktFyX6no7IPs/WLqrlImJ6oD4YFIUP0d7z18lJc1txSmwmIppSo5KlJ20S0jfTIWPyfTCGaVx75qGTpg==", "user"=>{"email"=>"eream86@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "eream86@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/users/apartments
+Completed 302 Found in 190ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 13:51:31 -0800
+Processing by PagesController#protected as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 71ms (Views: 61.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 13:52:06 -0800
+Processing by PagesController#protected as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.9ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/learn/Desktop/apartment-app-goonies/public/packs
+Completed 200 OK in 3918ms (Views: 3887.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 13:52:10 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 13:53:27 -0800
+Processing by PagesController#protected as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/learn/Desktop/apartment-app-goonies/public/packs
+Completed 200 OK in 4568ms (Views: 4546.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 13:53:48 -0800
+Processing by PagesController#protected as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.8ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/learn/Desktop/apartment-app-goonies/public/packs
+Completed 200 OK in 3992ms (Views: 3971.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 13:53:52 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 13:56:15 -0800
+Processing by PagesController#protected as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 13:56:15 -0800
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 73ms (Views: 64.3ms | ActiveRecord: 0.4ms)
+
+
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 13:56:16 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 13:57:06 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 13:57:07 -0800
+Processing by PagesController#protected as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.1ms)
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 13:57:07 -0800
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/learn/Desktop/apartment-app-goonies/public/packs
+Completed 200 OK in 4179ms (Views: 4147.1ms | ActiveRecord: 2.3ms)
+
+
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 13:57:12 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 13:57:45 -0800
+Processing by PagesController#protected as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.8ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/learn/Desktop/apartment-app-goonies/public/packs
+Completed 200 OK in 4200ms (Views: 4167.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/new-apartment" for 127.0.0.1 at 2019-02-08 13:58:13 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/users/new-apartment"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users/new-apartment" for 127.0.0.1 at 2019-02-08 13:59:23 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"all"=>"new-apartment"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 136ms (Views: 105.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/new-apartment" for 127.0.0.1 at 2019-02-08 13:59:33 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"new-apartment"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 100ms (Views: 51.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/new-apartment" for 127.0.0.1 at 2019-02-08 13:59:35 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"new-apartment"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 51ms (Views: 45.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/new-apartment" for 127.0.0.1 at 2019-02-08 13:59:55 -0800
+Processing by PagesController#protected as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 79ms (Views: 48.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 14:00:16 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"apartments"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 51ms (Views: 33.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 14:00:39 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"apartments"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 98ms (Views: 73.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 14:00:40 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"apartments"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 97ms (Views: 91.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/new-apartment" for 127.0.0.1 at 2019-02-08 14:00:48 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"new-apartment"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 55ms (Views: 45.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/new-apartment" for 127.0.0.1 at 2019-02-08 14:01:32 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"new-apartment"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.8ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/learn/Desktop/apartment-app-goonies/public/packs
+Completed 200 OK in 4344ms (Views: 4327.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 14:01:54 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"apartments"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 80ms (Views: 71.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 14:01:55 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 14:02:09 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"apartments"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 97ms (Views: 67.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 14:02:09 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 14:02:10 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"apartments"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 66ms (Views: 55.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 14:02:11 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/users/new-apartment" for 127.0.0.1 at 2019-02-08 14:02:17 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"new-apartment"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 54ms (Views: 45.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/apartments.json" for 127.0.0.1 at 2019-02-08 14:53:09 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/apartments" for 127.0.0.1 at 2019-02-08 14:53:24 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 14:53:35 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"apartments"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 45ms (Views: 37.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 14:53:36 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
