@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import {Redirect, Link} from "react-router-dom"
 
 
+
 class NewApartment extends React.Component {
 constructor(props){
   super(props)

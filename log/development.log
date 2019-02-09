@@ -3695,3 +3695,1141 @@ Did you mean?  skip_before_action):
   
 app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
 app/controllers/apartments_controller.rb:1:in `<main>'
+Started POST "/apartments.json" for 127.0.0.1 at 2019-02-08 14:57:11 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/all-apartments" for 127.0.0.1 at 2019-02-08 14:58:05 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/all-apartments"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 14:58:14 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"apartments"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 45ms (Views: 37.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 14:58:14 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started POST "/apartments.json" for 127.0.0.1 at 2019-02-08 14:59:04 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 15:03:18 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"apartments"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 15:03:18 -0800
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/learn/Desktop/apartment-app-goonies/public/packs
+Completed 200 OK in 4985ms (Views: 4957.9ms | ActiveRecord: 2.8ms)
+
+
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started POST "/apartments.json" for 127.0.0.1 at 2019-02-08 15:04:41 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/all-apartments" for 127.0.0.1 at 2019-02-08 15:06:00 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/all-apartments"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users/all-apartments" for 127.0.0.1 at 2019-02-08 15:06:20 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"all-apartments"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.6ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: eb062efdf6eeef0c2ca5
+Version: webpack 3.12.0
+Time: 2420ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-4fd62b8ff3415765cc02.js    1.21 MB       0  [emitted]  [big]  server_rendering
+         application-f101fe89b32be9e91f4e.js    1.21 MB       1  [emitted]  [big]  application
+         hello_react-f1ece2f17ecd53f59f12.js     900 kB       2  [emitted]  [big]  hello_react
+server_rendering-4fd62b8ff3415765cc02.js.map    1.35 MB       0  [emitted]         server_rendering
+     application-f101fe89b32be9e91f4e.js.map    1.35 MB       1  [emitted]         application
+     hello_react-f1ece2f17ecd53f59f12.js.map    1.05 MB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+  [33] (webpack)/buildin/global.js 509 bytes {0} {1} {2} [built]
+  [37] ./app/javascript/components ^\.\/.*$ 419 bytes {0} {1} [built]
+  [73] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [74] ./app/javascript/packs/hello_react.jsx 739 bytes {2} [built]
+  [75] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 71 hidden modules
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve 'NewApartment' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 11:0-40
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 3764ms (Views: 3744.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 15:09:45 -0800
+Processing by PagesController#protected as HTML
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 15:09:45 -0800
+  Parameters: {"path"=>"apartments"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: eb062efdf6eeef0c2ca5
+Version: webpack 3.12.0
+Time: 1694ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-4fd62b8ff3415765cc02.js    1.21 MB       0  [emitted]  [big]  server_rendering
+         application-f101fe89b32be9e91f4e.js    1.21 MB       1  [emitted]  [big]  application
+         hello_react-f1ece2f17ecd53f59f12.js     900 kB       2  [emitted]  [big]  hello_react
+server_rendering-4fd62b8ff3415765cc02.js.map    1.35 MB       0  [emitted]         server_rendering
+     application-f101fe89b32be9e91f4e.js.map    1.35 MB       1  [emitted]         application
+     hello_react-f1ece2f17ecd53f59f12.js.map    1.05 MB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+  [33] (webpack)/buildin/global.js 509 bytes {0} {1} {2} [built]
+  [37] ./app/javascript/components ^\.\/.*$ 419 bytes {0} {1} [built]
+  [73] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [74] ./app/javascript/packs/hello_react.jsx 739 bytes {2} [built]
+  [75] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 71 hidden modules
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve 'NewApartment' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 11:0-40
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 3223ms (Views: 3206.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 15:09:49 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"apartments"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.5ms)
+[Webpacker] Compiling…
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 15:09:52 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"apartments"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 65ms (Views: 53.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 15:09:52 -0800
+[Webpacker] Compilation failed:
+
+Hash: eb062efdf6eeef0c2ca5
+Version: webpack 3.12.0
+Time: 2421ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-4fd62b8ff3415765cc02.js    1.21 MB       0  [emitted]  [big]  server_rendering
+         application-f101fe89b32be9e91f4e.js    1.21 MB       1  [emitted]  [big]  application
+         hello_react-f1ece2f17ecd53f59f12.js     900 kB       2  [emitted]  [big]  hello_react
+server_rendering-4fd62b8ff3415765cc02.js.map    1.35 MB       0  [emitted]         server_rendering
+     application-f101fe89b32be9e91f4e.js.map    1.35 MB       1  [emitted]         application
+     hello_react-f1ece2f17ecd53f59f12.js.map    1.05 MB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+  [33] (webpack)/buildin/global.js 509 bytes {0} {1} {2} [built]
+  [37] ./app/javascript/components ^\.\/.*$ 419 bytes {0} {1} [built]
+  [73] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [74] ./app/javascript/packs/hello_react.jsx 739 bytes {2} [built]
+  [75] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 71 hidden modules
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve 'NewApartment' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 11:0-40
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 4660ms (Views: 4452.6ms | ActiveRecord: 1.7ms)
+
+
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 15:10:37 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"apartments"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.9ms)
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 15:10:37 -0800
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: eb062efdf6eeef0c2ca5
+Version: webpack 3.12.0
+Time: 1745ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-4fd62b8ff3415765cc02.js    1.21 MB       0  [emitted]  [big]  server_rendering
+         application-f101fe89b32be9e91f4e.js    1.21 MB       1  [emitted]  [big]  application
+         hello_react-f1ece2f17ecd53f59f12.js     900 kB       2  [emitted]  [big]  hello_react
+server_rendering-4fd62b8ff3415765cc02.js.map    1.35 MB       0  [emitted]         server_rendering
+     application-f101fe89b32be9e91f4e.js.map    1.35 MB       1  [emitted]         application
+     hello_react-f1ece2f17ecd53f59f12.js.map    1.05 MB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+  [33] (webpack)/buildin/global.js 509 bytes {0} {1} {2} [built]
+  [37] ./app/javascript/components ^\.\/.*$ 419 bytes {0} {1} [built]
+  [73] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [74] ./app/javascript/packs/hello_react.jsx 739 bytes {2} [built]
+  [75] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 71 hidden modules
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve 'NewApartment' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 11:0-40
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 3183ms (Views: 3177.4ms | ActiveRecord: 0.4ms)
+
+
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 15:10:41 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started POST "/apartments.json" for 127.0.0.1 at 2019-02-08 15:11:49 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/all-apartments" for 127.0.0.1 at 2019-02-08 15:13:12 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/all-apartments"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users/all-apartments" for 127.0.0.1 at 2019-02-08 15:13:22 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"all-apartments"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /Users/learn/Desktop/apartment-app-goonies/public/packs
+Completed 200 OK in 3171ms (Views: 3150.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/all-apartments" for 127.0.0.1 at 2019-02-08 15:14:00 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"all-apartments"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.8ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: ec8fd804baa23d76c9a6
+Version: webpack 3.12.0
+Time: 2200ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-40081b11424e4f18ef24.js    1.21 MB       0  [emitted]  [big]  server_rendering
+         application-ea21b06500bc0410bf01.js    1.21 MB       1  [emitted]  [big]  application
+         hello_react-f1ece2f17ecd53f59f12.js     900 kB       2  [emitted]  [big]  hello_react
+server_rendering-40081b11424e4f18ef24.js.map    1.35 MB       0  [emitted]         server_rendering
+     application-ea21b06500bc0410bf01.js.map    1.35 MB       1  [emitted]         application
+     hello_react-f1ece2f17ecd53f59f12.js.map    1.05 MB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+  [33] (webpack)/buildin/global.js 509 bytes {0} {1} {2} [built]
+  [37] ./app/javascript/components ^\.\/.*$ 419 bytes {0} {1} [built]
+  [73] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [74] ./app/javascript/packs/hello_react.jsx 739 bytes {2} [built]
+  [75] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 71 hidden modules
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/Apartments' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 12:0-44
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/NewApartment' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 11:0-48
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 3610ms (Views: 3580.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/all-apartments" for 127.0.0.1 at 2019-02-08 15:18:39 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"all-apartments"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 10b95220f32ecf6616ca
+Version: webpack 3.12.0
+Time: 2125ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-fa111f971cac97d9272d.js    1.21 MB       0  [emitted]  [big]  server_rendering
+         application-8fb793d3f815efd80834.js    1.21 MB       1  [emitted]  [big]  application
+         hello_react-f1ece2f17ecd53f59f12.js     900 kB       2  [emitted]  [big]  hello_react
+server_rendering-fa111f971cac97d9272d.js.map    1.35 MB       0  [emitted]         server_rendering
+     application-8fb793d3f815efd80834.js.map    1.35 MB       1  [emitted]         application
+     hello_react-f1ece2f17ecd53f59f12.js.map    1.05 MB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+  [33] (webpack)/buildin/global.js 509 bytes {0} {1} {2} [built]
+  [37] ./app/javascript/components ^\.\/.*$ 419 bytes {0} {1} [built]
+  [73] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [74] ./app/javascript/packs/hello_react.jsx 739 bytes {2} [built]
+  [75] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 71 hidden modules
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/Apartments' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 12:0-44
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/NewApartment' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 11:0-48
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 3703ms (Views: 3684.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/users/all-apartments" for 127.0.0.1 at 2019-02-08 15:18:47 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"users/all-apartments"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (2.9ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 10b95220f32ecf6616ca
+Version: webpack 3.12.0
+Time: 1768ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-fa111f971cac97d9272d.js    1.21 MB       0  [emitted]  [big]  server_rendering
+         application-8fb793d3f815efd80834.js    1.21 MB       1  [emitted]  [big]  application
+         hello_react-f1ece2f17ecd53f59f12.js     900 kB       2  [emitted]  [big]  hello_react
+server_rendering-fa111f971cac97d9272d.js.map    1.35 MB       0  [emitted]         server_rendering
+     application-8fb793d3f815efd80834.js.map    1.35 MB       1  [emitted]         application
+     hello_react-f1ece2f17ecd53f59f12.js.map    1.05 MB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+  [33] (webpack)/buildin/global.js 509 bytes {0} {1} {2} [built]
+  [37] ./app/javascript/components ^\.\/.*$ 419 bytes {0} {1} [built]
+  [73] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [74] ./app/javascript/packs/hello_react.jsx 739 bytes {2} [built]
+  [75] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 71 hidden modules
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/Apartments' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 12:0-44
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/NewApartment' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 11:0-48
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 3132ms (Views: 3124.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/users/all-apartments" for 127.0.0.1 at 2019-02-08 15:34:09 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"users/all-apartments"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: ef06a00951f0546aab89
+Version: webpack 3.12.0
+Time: 2918ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-8fc2329fd747207ce718.js    1.21 MB       0  [emitted]  [big]  server_rendering
+         application-7cb1fd3e92fa09f976c8.js    1.21 MB       1  [emitted]  [big]  application
+         hello_react-f1ece2f17ecd53f59f12.js     900 kB       2  [emitted]  [big]  hello_react
+server_rendering-8fc2329fd747207ce718.js.map    1.35 MB       0  [emitted]         server_rendering
+     application-7cb1fd3e92fa09f976c8.js.map    1.35 MB       1  [emitted]         application
+     hello_react-f1ece2f17ecd53f59f12.js.map    1.05 MB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+  [33] (webpack)/buildin/global.js 509 bytes {0} {1} {2} [built]
+  [37] ./app/javascript/components ^\.\/.*$ 419 bytes {0} {1} [built]
+  [73] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [74] ./app/javascript/packs/hello_react.jsx 739 bytes {2} [built]
+  [75] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 71 hidden modules
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/Apartments' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 12:0-44
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/NewApartment' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 11:0-48
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 4423ms (Views: 4405.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 15:34:17 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"apartments"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: ef06a00951f0546aab89
+Version: webpack 3.12.0
+Time: 1645ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-8fc2329fd747207ce718.js    1.21 MB       0  [emitted]  [big]  server_rendering
+         application-7cb1fd3e92fa09f976c8.js    1.21 MB       1  [emitted]  [big]  application
+         hello_react-f1ece2f17ecd53f59f12.js     900 kB       2  [emitted]  [big]  hello_react
+server_rendering-8fc2329fd747207ce718.js.map    1.35 MB       0  [emitted]         server_rendering
+     application-7cb1fd3e92fa09f976c8.js.map    1.35 MB       1  [emitted]         application
+     hello_react-f1ece2f17ecd53f59f12.js.map    1.05 MB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+  [33] (webpack)/buildin/global.js 509 bytes {0} {1} {2} [built]
+  [37] ./app/javascript/components ^\.\/.*$ 419 bytes {0} {1} [built]
+  [73] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [74] ./app/javascript/packs/hello_react.jsx 739 bytes {2} [built]
+  [75] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 71 hidden modules
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/Apartments' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 12:0-44
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/NewApartment' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 11:0-48
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 3065ms (Views: 3059.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 15:34:20 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 15:35:37 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"apartments"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: ef06a00951f0546aab89
+Version: webpack 3.12.0
+Time: 1800ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-8fc2329fd747207ce718.js    1.21 MB       0  [emitted]  [big]  server_rendering
+         application-7cb1fd3e92fa09f976c8.js    1.21 MB       1  [emitted]  [big]  application
+         hello_react-f1ece2f17ecd53f59f12.js     900 kB       2  [emitted]  [big]  hello_react
+server_rendering-8fc2329fd747207ce718.js.map    1.35 MB       0  [emitted]         server_rendering
+     application-7cb1fd3e92fa09f976c8.js.map    1.35 MB       1  [emitted]         application
+     hello_react-f1ece2f17ecd53f59f12.js.map    1.05 MB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+  [33] (webpack)/buildin/global.js 509 bytes {0} {1} {2} [built]
+  [37] ./app/javascript/components ^\.\/.*$ 419 bytes {0} {1} [built]
+  [73] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [74] ./app/javascript/packs/hello_react.jsx 739 bytes {2} [built]
+  [75] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 71 hidden modules
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/Apartments' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 12:0-44
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/NewApartment' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 11:0-48
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 3322ms (Views: 3314.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 15:35:41 -0800
+  
+ActionController::RoutingError (undefined method `skip_before' for ApartmentsController:Class
+Did you mean?  skip_before_action):
+  
+app/controllers/apartments_controller.rb:3:in `<class:ApartmentsController>'
+app/controllers/apartments_controller.rb:1:in `<main>'
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 15:38:15 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"apartments"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.8ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: ef06a00951f0546aab89
+Version: webpack 3.12.0
+Time: 3836ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-8fc2329fd747207ce718.js    1.21 MB       0  [emitted]  [big]  server_rendering
+         application-7cb1fd3e92fa09f976c8.js    1.21 MB       1  [emitted]  [big]  application
+         hello_react-f1ece2f17ecd53f59f12.js     900 kB       2  [emitted]  [big]  hello_react
+server_rendering-8fc2329fd747207ce718.js.map    1.35 MB       0  [emitted]         server_rendering
+     application-7cb1fd3e92fa09f976c8.js.map    1.35 MB       1  [emitted]         application
+     hello_react-f1ece2f17ecd53f59f12.js.map    1.05 MB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+  [33] (webpack)/buildin/global.js 509 bytes {0} {1} {2} [built]
+  [37] ./app/javascript/components ^\.\/.*$ 419 bytes {0} {1} [built]
+  [73] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [74] ./app/javascript/packs/hello_react.jsx 739 bytes {2} [built]
+  [75] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 71 hidden modules
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/Apartments' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 12:0-44
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/NewApartment' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 11:0-48
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 9171ms (Views: 9135.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 15:38:24 -0800
+Processing by ApartmentsController#index as JSON
+  Rendering apartments/index.json.jbuilder
+  [1m[36mApartment Load (0.4ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/views/apartments/index.json.jbuilder:1
+  Rendered apartments/index.json.jbuilder (27.4ms)
+Completed 200 OK in 108ms (Views: 47.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 15:38:28 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"apartments"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: ef06a00951f0546aab89
+Version: webpack 3.12.0
+Time: 1777ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-8fc2329fd747207ce718.js    1.21 MB       0  [emitted]  [big]  server_rendering
+         application-7cb1fd3e92fa09f976c8.js    1.21 MB       1  [emitted]  [big]  application
+         hello_react-f1ece2f17ecd53f59f12.js     900 kB       2  [emitted]  [big]  hello_react
+server_rendering-8fc2329fd747207ce718.js.map    1.35 MB       0  [emitted]         server_rendering
+     application-7cb1fd3e92fa09f976c8.js.map    1.35 MB       1  [emitted]         application
+     hello_react-f1ece2f17ecd53f59f12.js.map    1.05 MB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+  [33] (webpack)/buildin/global.js 509 bytes {0} {1} {2} [built]
+  [37] ./app/javascript/components ^\.\/.*$ 419 bytes {0} {1} [built]
+  [73] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [74] ./app/javascript/packs/hello_react.jsx 739 bytes {2} [built]
+  [75] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 71 hidden modules
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/Apartments' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 12:0-44
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/NewApartment' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 11:0-48
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 3400ms (Views: 3390.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 15:38:32 -0800
+Processing by ApartmentsController#index as JSON
+  Rendering apartments/index.json.jbuilder
+  [1m[36mApartment Load (0.4ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/views/apartments/index.json.jbuilder:1
+  Rendered apartments/index.json.jbuilder (3.2ms)
+Completed 200 OK in 24ms (Views: 20.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/apartments.json" for 127.0.0.1 at 2019-02-08 15:54:38 -0800
+Processing by ApartmentsController#create as JSON
+  Parameters: {"apartment"=>{"address"=>"123 main street", "city"=>"san diego", "zipcode"=>"92009", "state"=>"CA", "country"=>"United States"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/apartments_controller.rb:28
+Unpermitted parameter: :zipcode
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/apartments_controller.rb:31
+  [1m[36mApartment Create (53.5ms)[0m  [1m[32mINSERT INTO "apartments" ("address", "city", "state", "country", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["address", "123 main street"], ["city", "san diego"], ["state", "CA"], ["country", "United States"], ["user_id", 1], ["created_at", "2019-02-08 23:54:38.748070"], ["updated_at", "2019-02-08 23:54:38.748070"]]
+  ↳ app/controllers/apartments_controller.rb:31
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/apartments_controller.rb:31
+  Rendering apartments/show.json.jbuilder
+  Rendered apartments/_apartment.json.jbuilder (0.9ms)
+  Rendered apartments/show.json.jbuilder (4.0ms)
+Completed 201 Created in 211ms (Views: 54.2ms | ActiveRecord: 57.1ms)
+
+
+Started GET "/users/new-apartment" for 127.0.0.1 at 2019-02-08 15:56:07 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"new-apartment"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.3ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 30cd9d748f0065b1def2
+Version: webpack 3.12.0
+Time: 2737ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-852d8f6cd70d7b35b13d.js    1.21 MB       0  [emitted]  [big]  server_rendering
+         application-f1a906d622f9a0fbac85.js    1.21 MB       1  [emitted]  [big]  application
+         hello_react-f1ece2f17ecd53f59f12.js     900 kB       2  [emitted]  [big]  hello_react
+server_rendering-852d8f6cd70d7b35b13d.js.map    1.35 MB       0  [emitted]         server_rendering
+     application-f1a906d622f9a0fbac85.js.map    1.35 MB       1  [emitted]         application
+     hello_react-f1ece2f17ecd53f59f12.js.map    1.05 MB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+  [33] (webpack)/buildin/global.js 509 bytes {0} {1} {2} [built]
+  [37] ./app/javascript/components ^\.\/.*$ 419 bytes {0} {1} [built]
+  [73] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [74] ./app/javascript/packs/hello_react.jsx 739 bytes {2} [built]
+  [75] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 71 hidden modules
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/Apartments' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 12:0-44
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/NewApartment' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 11:0-48
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/components/pages/Apartments.js
+Module not found: Error: Can't resolve './pages/NewApartment' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/Apartments.js 12:0-48
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 4370ms (Views: 4335.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 15:56:12 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"apartments"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (1.5ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: 30cd9d748f0065b1def2
+Version: webpack 3.12.0
+Time: 2057ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-852d8f6cd70d7b35b13d.js    1.21 MB       0  [emitted]  [big]  server_rendering
+         application-f1a906d622f9a0fbac85.js    1.21 MB       1  [emitted]  [big]  application
+         hello_react-f1ece2f17ecd53f59f12.js     900 kB       2  [emitted]  [big]  hello_react
+server_rendering-852d8f6cd70d7b35b13d.js.map    1.35 MB       0  [emitted]         server_rendering
+     application-f1a906d622f9a0fbac85.js.map    1.35 MB       1  [emitted]         application
+     hello_react-f1ece2f17ecd53f59f12.js.map    1.05 MB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+  [33] (webpack)/buildin/global.js 509 bytes {0} {1} {2} [built]
+  [37] ./app/javascript/components ^\.\/.*$ 419 bytes {0} {1} [built]
+  [73] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [74] ./app/javascript/packs/hello_react.jsx 739 bytes {2} [built]
+  [75] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 71 hidden modules
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/Apartments' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 12:0-44
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/NewApartment' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 11:0-48
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/components/pages/Apartments.js
+Module not found: Error: Can't resolve './pages/NewApartment' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/Apartments.js 12:0-48
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 3842ms (Views: 3836.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 15:56:41 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"apartments"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.9ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: ef06a00951f0546aab89
+Version: webpack 3.12.0
+Time: 2138ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-8fc2329fd747207ce718.js    1.21 MB       0  [emitted]  [big]  server_rendering
+         application-7cb1fd3e92fa09f976c8.js    1.21 MB       1  [emitted]  [big]  application
+         hello_react-f1ece2f17ecd53f59f12.js     900 kB       2  [emitted]  [big]  hello_react
+server_rendering-8fc2329fd747207ce718.js.map    1.35 MB       0  [emitted]         server_rendering
+     application-7cb1fd3e92fa09f976c8.js.map    1.35 MB       1  [emitted]         application
+     hello_react-f1ece2f17ecd53f59f12.js.map    1.05 MB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+  [33] (webpack)/buildin/global.js 509 bytes {0} {1} {2} [built]
+  [37] ./app/javascript/components ^\.\/.*$ 419 bytes {0} {1} [built]
+  [73] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [74] ./app/javascript/packs/hello_react.jsx 739 bytes {2} [built]
+  [75] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 71 hidden modules
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/Apartments' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 12:0-44
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/NewApartment' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 11:0-48
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 3566ms (Views: 3549.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 15:56:45 -0800
+Processing by ApartmentsController#index as JSON
+  Rendering apartments/index.json.jbuilder
+  [1m[36mApartment Load (0.5ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/views/apartments/index.json.jbuilder:1
+  Rendered apartments/_apartment.json.jbuilder (1.8ms)
+  Rendered apartments/index.json.jbuilder (33.5ms)
+Completed 200 OK in 65ms (Views: 50.0ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/apartments.json" for 127.0.0.1 at 2019-02-08 15:57:01 -0800
+Processing by ApartmentsController#create as JSON
+  Parameters: {"apartment"=>{"address"=>"321 main street", "city"=>"san diego", "zipcode"=>"92009", "state"=>"CA", "country"=>"United States"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/apartments_controller.rb:28
+Unpermitted parameter: :zipcode
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/apartments_controller.rb:31
+  [1m[36mApartment Create (0.8ms)[0m  [1m[32mINSERT INTO "apartments" ("address", "city", "state", "country", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["address", "321 main street"], ["city", "san diego"], ["state", "CA"], ["country", "United States"], ["user_id", 1], ["created_at", "2019-02-08 23:57:01.552772"], ["updated_at", "2019-02-08 23:57:01.552772"]]
+  ↳ app/controllers/apartments_controller.rb:31
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/apartments_controller.rb:31
+  Rendering apartments/show.json.jbuilder
+  Rendered apartments/_apartment.json.jbuilder (0.6ms)
+  Rendered apartments/show.json.jbuilder (13.6ms)
+Completed 201 Created in 44ms (Views: 24.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 15:57:14 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"apartments"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.9ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: ef06a00951f0546aab89
+Version: webpack 3.12.0
+Time: 1723ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-8fc2329fd747207ce718.js    1.21 MB       0  [emitted]  [big]  server_rendering
+         application-7cb1fd3e92fa09f976c8.js    1.21 MB       1  [emitted]  [big]  application
+         hello_react-f1ece2f17ecd53f59f12.js     900 kB       2  [emitted]  [big]  hello_react
+server_rendering-8fc2329fd747207ce718.js.map    1.35 MB       0  [emitted]         server_rendering
+     application-7cb1fd3e92fa09f976c8.js.map    1.35 MB       1  [emitted]         application
+     hello_react-f1ece2f17ecd53f59f12.js.map    1.05 MB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+  [33] (webpack)/buildin/global.js 509 bytes {0} {1} {2} [built]
+  [37] ./app/javascript/components ^\.\/.*$ 419 bytes {0} {1} [built]
+  [73] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [74] ./app/javascript/packs/hello_react.jsx 739 bytes {2} [built]
+  [75] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 71 hidden modules
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/Apartments' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 12:0-44
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/NewApartment' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 11:0-48
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 3101ms (Views: 3094.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 15:57:18 -0800
+Processing by ApartmentsController#index as JSON
+  Rendering apartments/index.json.jbuilder
+  [1m[36mApartment Load (0.4ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/views/apartments/index.json.jbuilder:1
+  Rendered apartments/_apartment.json.jbuilder (1.7ms)
+  Rendered apartments/_apartment.json.jbuilder (0.8ms)
+  Rendered apartments/index.json.jbuilder (13.8ms)
+Completed 200 OK in 36ms (Views: 32.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/all-apartments" for 127.0.0.1 at 2019-02-08 15:59:18 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/all-apartments"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.5) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 16:01:07 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"apartments"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.8ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: ef06a00951f0546aab89
+Version: webpack 3.12.0
+Time: 1707ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-8fc2329fd747207ce718.js    1.21 MB       0  [emitted]  [big]  server_rendering
+         application-7cb1fd3e92fa09f976c8.js    1.21 MB       1  [emitted]  [big]  application
+         hello_react-f1ece2f17ecd53f59f12.js     900 kB       2  [emitted]  [big]  hello_react
+server_rendering-8fc2329fd747207ce718.js.map    1.35 MB       0  [emitted]         server_rendering
+     application-7cb1fd3e92fa09f976c8.js.map    1.35 MB       1  [emitted]         application
+     hello_react-f1ece2f17ecd53f59f12.js.map    1.05 MB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+  [33] (webpack)/buildin/global.js 509 bytes {0} {1} {2} [built]
+  [37] ./app/javascript/components ^\.\/.*$ 419 bytes {0} {1} [built]
+  [73] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [74] ./app/javascript/packs/hello_react.jsx 739 bytes {2} [built]
+  [75] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 71 hidden modules
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/Apartments' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 12:0-44
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/NewApartment' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 11:0-48
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 2982ms (Views: 2976.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 16:01:11 -0800
+Processing by ApartmentsController#index as JSON
+  Rendering apartments/index.json.jbuilder
+  [1m[36mApartment Load (0.5ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/views/apartments/index.json.jbuilder:1
+  Rendered apartments/_apartment.json.jbuilder (1.4ms)
+  Rendered apartments/_apartment.json.jbuilder (0.7ms)
+  Rendered apartments/index.json.jbuilder (11.1ms)
+Completed 200 OK in 35ms (Views: 29.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/apartments.json" for 127.0.0.1 at 2019-02-08 16:01:17 -0800
+Processing by ApartmentsController#create as JSON
+  Parameters: {"apartment"=>{"address"=>"123 main street", "city"=>"san diego", "zipcode"=>"92009", "state"=>"CA", "country"=>"United States"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/apartments_controller.rb:28
+Unpermitted parameter: :zipcode
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/apartments_controller.rb:31
+  [1m[36mApartment Create (0.6ms)[0m  [1m[32mINSERT INTO "apartments" ("address", "city", "state", "country", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["address", "123 main street"], ["city", "san diego"], ["state", "CA"], ["country", "United States"], ["user_id", 1], ["created_at", "2019-02-09 00:01:17.351575"], ["updated_at", "2019-02-09 00:01:17.351575"]]
+  ↳ app/controllers/apartments_controller.rb:31
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/apartments_controller.rb:31
+  Rendering apartments/show.json.jbuilder
+  Rendered apartments/_apartment.json.jbuilder (0.7ms)
+  Rendered apartments/show.json.jbuilder (2.3ms)
+Completed 201 Created in 28ms (Views: 16.0ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/users/apartments" for 127.0.0.1 at 2019-02-08 16:01:24 -0800
+Processing by PagesController#protected as HTML
+  Parameters: {"path"=>"apartments"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.5.3/gems/activerecord-5.2.2/lib/active_record/log_subscriber.rb:98
+  Rendering pages/protected.html.erb within layouts/application
+  Rendered pages/protected.html.erb within layouts/application (0.7ms)
+[Webpacker] Compiling…
+[Webpacker] Compilation failed:
+
+Hash: ef06a00951f0546aab89
+Version: webpack 3.12.0
+Time: 1671ms
+                                       Asset       Size  Chunks                    Chunk Names
+    server_rendering-8fc2329fd747207ce718.js    1.21 MB       0  [emitted]  [big]  server_rendering
+         application-7cb1fd3e92fa09f976c8.js    1.21 MB       1  [emitted]  [big]  application
+         hello_react-f1ece2f17ecd53f59f12.js     900 kB       2  [emitted]  [big]  hello_react
+server_rendering-8fc2329fd747207ce718.js.map    1.35 MB       0  [emitted]         server_rendering
+     application-7cb1fd3e92fa09f976c8.js.map    1.35 MB       1  [emitted]         application
+     hello_react-f1ece2f17ecd53f59f12.js.map    1.05 MB       2  [emitted]         hello_react
+                               manifest.json  442 bytes          [emitted]         
+  [33] (webpack)/buildin/global.js 509 bytes {0} {1} {2} [built]
+  [37] ./app/javascript/components ^\.\/.*$ 419 bytes {0} {1} [built]
+  [73] ./app/javascript/packs/application.js 730 bytes {1} [built]
+  [74] ./app/javascript/packs/hello_react.jsx 739 bytes {2} [built]
+  [75] ./app/javascript/packs/server_rendering.js 299 bytes {0} [built]
+    + 71 hidden modules
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/Apartments' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 12:0-44
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/components/pages/AllApartments.js
+Module not found: Error: Can't resolve './pages/NewApartment' in '/Users/learn/Desktop/apartment-app-goonies/app/javascript/components/pages'
+ @ ./app/javascript/components/pages/AllApartments.js 11:0-48
+ @ ./app/javascript/components ^\.\/.*$
+ @ ./app/javascript/packs/application.js
+
+Completed 200 OK in 3042ms (Views: 3035.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/apartments.json" for 127.0.0.1 at 2019-02-08 16:01:27 -0800
+Processing by ApartmentsController#index as JSON
+  Rendering apartments/index.json.jbuilder
+  [1m[36mApartment Load (0.3ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/views/apartments/index.json.jbuilder:1
+  Rendered apartments/_apartment.json.jbuilder (1.7ms)
+  Rendered apartments/_apartment.json.jbuilder (0.7ms)
+  Rendered apartments/_apartment.json.jbuilder (0.5ms)
+  Rendered apartments/index.json.jbuilder (14.0ms)
+Completed 200 OK in 39ms (Views: 34.0ms | ActiveRecord: 0.3ms)
+
+

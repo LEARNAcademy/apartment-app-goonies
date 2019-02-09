@@ -1,6 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "react-router-dom"
+
+
 class Apartments extends React.Component {
   constructor(props){
     super(props)
@@ -10,12 +12,17 @@ class Apartments extends React.Component {
   }
 
   componentDidMount(){
-    fetch("/apartments.json")
-    .then((response) => response.json())
-    .then((apartments) =>{
-      this.setState({ apartments: apartments})
-    })
-  }
+    fetch('/apartments.json')
+	      .then((response) => {
+	        return response.json()
+	      })
+	      .then((json) => {
+	        this.setState({apartments: json})
+	      })
+	      .catch((e)=>{
+	        console.log("Error", e)
+	      })
+	  }
 
   render () {
     return (
